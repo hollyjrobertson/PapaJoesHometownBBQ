@@ -12,7 +12,7 @@
         $txt = "You have received an e-mail from ".$name.":\r\n"."\r\n".$message;
 
         if (mail($mailTo, $subject, $txt, $headers)){
-            $result = "Thank you ".$name." for your message. I will get back with you ASAP!<br>
+            $result = "Thank you ".$name." for your message. <br>I will get back with you ASAP!<br>
             I hope you have a great day!";
         }
         else {
@@ -120,7 +120,7 @@
                 <div class="inner">
                 
                     <h2 id="contact">Contact Us</h2>
-                    <h3><center><?php echo $result; ?></center></h3>
+                    <h6 class="align-center"><?php echo $result; ?></h6>
                 
                     <form action="index.php#contact" method="post">
 

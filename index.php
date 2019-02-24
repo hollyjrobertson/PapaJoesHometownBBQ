@@ -120,24 +120,24 @@
                 <div class="inner">
                 
                     <h2 id="contact">Contact Us</h2>
-                    <h3><?php echo $result; ?></h3>
+                    <h3><center><?php echo $result; ?></center></h3>
                 
                     <form action="index.php#contact" method="post">
 
                         <div class="field half first">
-                            <label for="name">Name*</label>
-                            <input name="name" id="name" type="text" placeholder="Name" required>
+                            <label for="name">* Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="field half">
-                            <label for="email">Email*</label>
-                            <input name="email" id="email" type="email" placeholder="Email" required>
+                            <label for="myEmail">* E-mail: </label>
+                            <input type="email" name="email" id="email" placeholder="Your E-mail" required>
                         </div>
                         <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                            <label for="myComments">* Message: </label>
+                            <textarea name="message" id="message" rows=6 placeholder="Your Message" required></textarea>
                         </div>
                         <ul class="actions">
-                            <li><input value="Send Message" class="button alt" type="submit"></li>
+                            <li><input type="submit" name="submit" id="mySubmit" class="button alt"></li>
                         </ul>
                         <p>Required *</p>
                     </form>

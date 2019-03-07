@@ -30,12 +30,13 @@
         $headers = "From:".$mailFrom;
         $subject = "NEW ORDER! From: ".$name;
         $txt = "You have received an order from "."\r\n".
-        $name."\r\n"."Their number is ".$number."and email ".$mailFrom."\r\n"."\r\n"."They have ordered:"."\r\n"."\r\n".
+        $name."\r\n"."Their number is ".$number." and email is ".$mailFrom."\r\n"."\r\n"."They have ordered:"."\r\n"."\r\n".
         "Brisket by the pound: ".$brisketQty."\r\n".
         "Ribs by the pound: ".$ribsQty."\r\n".
         "Pulled pork by the pound: ".$pporkQty."\r\n".
         "Turkey by the pound: ".$turkeyQty."\r\n".
-        "Sausage by the link: ".$sausageQty."\r\n";
+        "Sausage by the link: ".$sausageQty."\r\n"."\r\n".
+        "Their specil instructions are: ".$message;
 
 
         $message;
@@ -48,7 +49,7 @@
         }
       }
       else {
-        $result = "Google thinks you're a robot. <br>If you're not, please email us.";
+        $result = "Google thinks you're a robot. If you're not, please email us.";
       }
 }
 ?>
